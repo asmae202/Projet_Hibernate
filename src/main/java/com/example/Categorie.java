@@ -1,28 +1,25 @@
 package com.example.model;
 
 import javax.persistence.*;
-import java.math.BigDecimal;
+import java.util.List;
 
 @Entity
-public class Produit {
+public class Categorie {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String nom;
-    private BigDecimal prix;
 
-    @ManyToOne
-    @JoinColumn(name = "categorie_id")
-    private Categorie categorie;
+    @OneToMany(mappedBy = "categorie")
+    private List<Produit> produits;
 
     // Constructeur par défaut requis par JPA
-    public Produit() {}
+    public Categorie() {}
 
-    public Produit(String nom, BigDecimal prix) {
+    public Categorie(String nom) {
         this.nom = nom;
-        this.prix = prix;
     }
 
     // Getters et setters
@@ -32,18 +29,14 @@ public class Produit {
     public String getNom() { return nom; }
     public void setNom(String nom) { this.nom = nom; }
 
-    public BigDecimal getPrix() { return prix; }
-    public void setPrix(BigDecimal prix) { this.prix = prix; }
-
-    public Categorie getCategorie() { return categorie; }
-    public void setCategorie(Categorie categorie) { this.categorie = categorie; }
+    public List<Produit> getProduits() { return produits; }
+    public void setProduits(List<Produit> produits) { this.produits = produits; }
 
     @Override
     public String toString() {
-        return "Produit{" +
+        return "Categorie{" +
                 "id=" + id +
                 ", nom='" + nom + '\'' +
-                ", prix=" + prix +
                 '}';
     }
 }
