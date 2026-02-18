@@ -1,6 +1,6 @@
-![h11](https://github.com/user-attachments/assets/e31dc2bb-9854-4e80-9b52-90e0971dd715)# Hibernate Demo avec H2
+## Hibernate Demo avec H2
 
-Ce projet est un exemple simple d'utilisation de **Hibernate** avec **JPA** et une base de données **H2 en mémoire**.  
+Ce projet est un exemple simple d'utilisation de Hibernate avec JPA et une base de données H2 en mémoire.  
 Il permet de gérer des produits et des catégories, avec des opérations CRUD et des recherches par plage de prix.
 
 ---
@@ -29,17 +29,18 @@ Il permet de gérer des produits et des catégories, avec des opérations CRUD e
 
 ## Structure du projet
 
-<img width="356" height="386" alt="image" src="https://github.com/user-attachments/assets/30664e8c-f7db-452b-a7c5-5926d9b63d63" />
+<img width="353" height="385" alt="image" src="https://github.com/user-attachments/assets/3f5db6f6-0748-4094-acd3-3a1b52b7a669" />
+
 
 ## Résultats attendus
 
+![resul hibernage 1](https://github.com/user-attachments/assets/30d5b15d-4974-433b-bf51-ffbf63b03d6d)
+
 ![resultat hibernage 2](https://github.com/user-attachments/assets/23a8e1f0-9980-41c7-94d1-fc26d7e05ad1)
 ![resul hibernage 3](https://github.com/user-attachments/assets/bfedfc39-3ac9-4414-ab86-27d01a4b32a5)
-![Uploading resul hibernage 4.jpg…]()
-##Ajoutez une méthode pour mettre à jour le prix d'un produit
-##Ajoutez une méthode pour supprimer un produit
-##Créez une nouvelle entité Categorie et établissez une relation ManyToOne entre Produit et Categorie
-##Implémentez une recherche de produits par plage de prix
+![resul hibernage 4](https://github.com/user-attachments/assets/e1aeb395-cffa-4d83-a272-8ddd167856d1)
+
+## Ameliorations
 ![h1](https://github.com/user-attachments/assets/268f6959-ad2d-4cc7-8d19-ea5edb47ee9a)
 ![h2](https://github.com/user-attachments/assets/de80e230-ac76-478a-83e6-e9c146e7257d)
 ![h3](https://github.com/user-attachments/assets/2c1ab6cc-7ab1-4403-b941-3d6b2ec13ab2)
